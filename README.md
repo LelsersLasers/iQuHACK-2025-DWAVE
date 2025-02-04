@@ -28,7 +28,7 @@ Uses D-WAVE's CQM (Constrained Quadratic Model) quantum annealer to build the pe
 
 ## CQM (Constrained Quadratic Model)
 
-- Unlike other teams which used matrices, we used Python dictionaries to represent the CQM. \
+- Unlike other teams which used matrices, we used Python dictionaries to represent the CQM.
 - Decision Variables: `x[b, t, d]` -> `1` if class `b` is scheduled at time `t` in room `d`:
 ```python
 x = {(b, t, d): dimod.Binary(f'x_{b}_{t}_{d}')
